@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="col-sm-3 bg-light p-3 border m-auto">
+        {{#if error}}
+            <div class="alert alert-danger mt-5" role="alert">
+                <p>Username or Password Invalid</p>
+            </div>
+        {{/if}}
+        <form action="/login/auth" method="POST">
+            <div class="mb-3">
+                <label for="inputUser" class="form-label">Username</label>
+                <input type="text" class="form-control" id="inputUser" name="inputUser">
+            </div>
+            <div class="mb-3">
+                <label for="inputPass" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPass" name="inputPass">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

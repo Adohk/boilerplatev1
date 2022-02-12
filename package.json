@@ -16,6 +16,6 @@
     "http-errors": "1.6.3",
     "morgan": "1.9.1",
     "nodemon": "2.0.15",
-    "sqlite3": "5.0.2"
+    "sqlite3": "git+https://github.com/mapbox/node-sqlite3.git#593c9d"
   }
 }
